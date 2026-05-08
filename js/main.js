@@ -39,17 +39,3 @@ form?.addEventListener('submit', () => {
   }, 500);
 });
 
-// Lazy load images
-if ('IntersectionObserver' in window) {
-  const imgs = document.querySelectorAll('img[data-src]');
-  const io = new IntersectionObserver((entries, obs) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.src = entry.target.dataset.src;
-        entry.target.removeAttribute('data-src');
-        obs.unobserve(entry.target);
-      }
-    });
-  }, { rootMargin: '200px' });
-  imgs.forEach(img => io.observe(img));
-}
