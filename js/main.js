@@ -29,15 +29,14 @@ document.querySelectorAll('.faq-q').forEach(btn => {
   });
 });
 
-// Lead form submit
+// Lead form — submits via mailto, shows confirmation after mail client opens
 const form = document.getElementById('lead-form');
 const success = document.getElementById('form-success');
-form?.addEventListener('submit', e => {
-  e.preventDefault();
-  // TODO: replace with your form endpoint (Formspree, Netlify Forms, etc.)
-  // Example Formspree: fetch('https://formspree.io/f/YOUR_ID', { method:'POST', body: new FormData(form) })
-  form.style.display = 'none';
-  if (success) success.style.display = 'block';
+form?.addEventListener('submit', () => {
+  setTimeout(() => {
+    form.style.display = 'none';
+    if (success) success.style.display = 'block';
+  }, 500);
 });
 
 // Lazy load images
