@@ -83,7 +83,7 @@ h3{font-size:clamp(1.15rem,2vw,1.4rem)}
 .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:28px}
 .svc-card{background:var(--white);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);transition:transform .3s,box-shadow .3s}
 .svc-card:hover{transform:translateY(-7px);box-shadow:var(--shadow-lg)}
-.svc-img{width:100%;height:220px;object-fit:cover}
+.svc-img{width:100%;height:220px;object-fit:cover;background-color:#d6d6d6}
 .svc-body{padding:26px}
 .svc-icon{font-size:1.9rem;margin-bottom:12px}
 .svc-body h3{color:var(--green-dark);margin-bottom:10px}
@@ -93,7 +93,7 @@ h3{font-size:clamp(1.15rem,2vw,1.4rem)}
 
 /* ── GALLERY ── */
 .gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px}
-.gal-item{overflow:hidden;border-radius:9px;aspect-ratio:4/3;cursor:pointer}
+.gal-item{overflow:hidden;border-radius:9px;aspect-ratio:4/3;cursor:pointer;background-color:#d6d6d6}
 .gal-item img{width:100%;height:100%;object-fit:cover;transition:transform .45s}
 .gal-item:hover img{transform:scale(1.07)}
 .gallery-cta{text-align:center;margin-top:40px}
